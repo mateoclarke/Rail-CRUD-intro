@@ -5,6 +5,10 @@ class VideosController < ApplicationController
     @video = Video.find(id)
   end
 
+  def new
+  	@video = Video.new
+  end
+
   def show_all
     @videos = Video.all
   end
