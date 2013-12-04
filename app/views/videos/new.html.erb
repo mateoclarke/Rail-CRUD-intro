@@ -1,8 +1,12 @@
 <h1>New Video</h1>
 
 <%= form_for @video do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title %>
+  <%= f.label :title, "Video Title" %>
+  <%= f.text_field :title, :placeholder => "Video Title" %>
+  <%= f.label :youtube_id, "YouTube ID" %>
+  <%= f.text_field :youtube_id %>
+  <%= f.label :description %>
+  <%= f.text_field :description %>
 
   <%= f.submit %>
 <% end %>
