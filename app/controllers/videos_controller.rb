@@ -34,5 +34,11 @@ class VideosController < ApplicationController
   		params.require(:video).permit(:title, :description, :youtube_id)
 	end
 
+  def destroy
+    @video = Video.find(params[:id])
+    @video.destroy
+    redirect_to root_path
+  end
+
 
 end
