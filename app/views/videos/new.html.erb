@@ -1,21 +1,4 @@
 <h1>Create a new video.</h1>
 <br/>
 <br/>
-<%= form_for @video do |f| %>
-  <div class="field">
-    <%= f.label :title, "Video Title" %>
-    <%= f.text_field :title %>
-  </div>
-
-  <div class="field">
-    <%= f.label :description %>
-    <%= f.text_field :description %>
-  </div>
-
-  <div class="field">
-    <%= f.label :youtube_id %>
-    <%= f.text_field :youtube_id %>
-  </div>
-
-  <%= f.submit %>
-<% end %>
+<%= render "form" %>
